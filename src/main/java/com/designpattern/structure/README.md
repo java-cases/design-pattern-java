@@ -1,11 +1,11 @@
 ### 设计模式
 
-结构型
+#### 结构型
 
-- 适配器（Adapter）
-- 桥接（Bridge）
-- 组合（Composite）
-- 装饰（Decorator）
-- 外观（Facade）
-- 享元（Flyweight）
-- 代理（Proxy）
+- [适配器（Adapter）](./adapter/README.md)
+- [桥接（Bridge）](./bridge/README.md)
+- [组合（Composite）](./composite/README.md)
+- [装饰（Decorator）](./decorator/README.md)
+- [外观（Facade）](./facade/README.md)
+- [享元（Flyweight）](./flyweight/README.md)
+- [代理（Proxy）](./proxy/README.md)
