@@ -34,4 +34,4 @@ Design patterns are descriptions of communicating objects and classes that are c
 - 模板方法模式(Template Method Pattern)：定义一个操作中算法的框架，而将一些步骤延迟到子类中。使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤。
 - 访问者模式(Visitor Pattern)：表示一个作用于某对象结构中的各个元素的操作。访问者模式可以在不改变各元素的类的前提下定义作用于这些元素的新操作。
 
-设计模式的描述主要参考《Java设计模式》，代码主要参考了https://github.com/DuHouAn/Java-Notes，并在其基础上进行改动，仅作学习交流用。
+设计模式的描述主要参考《Java设计模式》，代码主要参考了[Java-Notes](https://github.com/DuHouAn/Java-Notes)，并在其基础上进行改动，仅作学习交流用。
