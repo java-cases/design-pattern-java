@@ -5,14 +5,14 @@
 设计模式是在特定环境下，为解决某一通用软件设计问题提供的一套解决方案，该方案描述了对象和类之间的相互作用。
 Design patterns are descriptions of communicating objects and classes that are customized to solve a general design problem in a particular context.
 
-#### 创建型( Creational)  [链接](./src/main/java/com/designpattern/constructor/README.md)
+#### 创建型( Creational)[链接](./src/main/java/com/designpattern/constructor/README.md)
 - 抽象工厂模式(Abstract Factory Pattern)：提供一个创建一系列相关或相互依赖对象的接口，而无须指定它们具体的类。 
 - 建造者模式（Builder Pattern)：将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。
 - 工厂方法模式( Factory Method Pattern)：定义一个用于创建对象的接口，但是让子类决定将哪一个类实例化。工厂方法模式让一个类的实例化延迟到其子类。
 - 原型模式（Prototype Pattern)：使用原型实例指定待创建对象的类型，并且通过复制这个原型来创建新的对象。
 - 单例模式(Singleton Pattern)：确保一个类只有一个实例，并提供一个全局的访问点来访间这个唯一的实例。
 
-#### 结构型( Structural)  [链接](./src/main/java/com/designpattern/structure/README.md)
+#### 结构型( Structural)[链接](./src/main/java/com/designpattern/structure/README.md)
 - 适配器模式（Adapter Pattern)：将一个类的接口转换成客户希望的另一个接口。适配器模式让那些接口不兼容的类可以一起工作。
 - 桥接模式( Bridge Pattern)：将抽象部分与它的实现部分解耦，使得两者都能够独立变化。
 - 组合模式（Composite Pattern)：组合多个对象形成树形结构，以表示具有部分-整体关系的层次结构。组合模式让客户端可以统一对待单个对象和组合对象。
@@ -21,7 +21,7 @@ Design patterns are descriptions of communicating objects and classes that are c
 - 享元模式(Flyweight Pattern)： 运用共享技术有效地支持大量细粒度对象的复用。
 - 代理模式(Proxy Pattern)： 给某一个对象提供一个代理或占位符，并由代理对象来控制对原对象的访问。
 
-#### 行为型( Behavioral)  [链接](./src/main/java/com/designpattern/behavior/README.md)
+#### 行为型( Behavioral)[链接](./src/main/java/com/designpattern/behavior/README.md)
 - 职责链模式( Chain of Responsibility Pattern)：避免将一个请求的发送者与接收者耦合在一起，让多个对象都有机会处理请求。将接收请求的对象连接成一条链，并且沿着这条链传递请求，直到有一个对象能够处理它为止。
 - 命令模式( Command Pattern)：将一个请求封装为一个对象，从而可用不同的请求对客户进行参数化，对请求排队或者记录请求日志，以及支持可撤销的操作。
 - 解释器模式(Interpreter Pattern)：给定一个语言，定义它的文法的一种表示，并定义一个解释器，这个解释器使用该表示来解释语言中的句子。
