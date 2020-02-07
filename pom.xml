@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.kenly</groupId>
-    <artifactId>java-usecase-designpattern</artifactId>
+    <artifactId>design-pattern-java</artifactId>
     <version>1.2.0</version>
     <packaging>jar</packaging>
 
