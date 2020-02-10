@@ -1,5 +1,8 @@
-package com.designpattern.gof.creational.factorymethod;
+package com.designpattern.gof.creational.ext.simplefactory;
 
+/**
+ *
+ */
 public class ConcreteProductA implements Product {
 
     public ConcreteProductA() {

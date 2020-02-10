@@ -3,20 +3,8 @@ package com.designpattern.gof.creational.prototype;
 /**
  *
  */
-public abstract class Prototype {
+public interface Prototype extends Cloneable {
+    Object clone() throws CloneNotSupportedException;
 
-    /**
-     * Default constructor
-     */
-    public Prototype() {
-    }
-
-    /**
-     * @return
-     */
-    public Prototype clone() {
-        // TODO implement here
-        return null;
-    }
-
+    void operation();
 }

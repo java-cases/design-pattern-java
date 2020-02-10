@@ -3,20 +3,18 @@ package com.designpattern.gof.creational.prototype;
 /**
  *
  */
-public class ConcretePrototypeA extends Prototype {
+public class ConcretePrototypeA implements Prototype {
 
-    /**
-     * Default constructor
-     */
     public ConcretePrototypeA() {
     }
 
-    /**
-     * @return
-     */
-    public Prototype clone() {
-        // TODO implement here
-        return null;
+    public Object clone() throws CloneNotSupportedException {
+        System.out.println("ConcretePrototypeA.clone()");
+        return (ConcretePrototypeA) super.clone();
+    }
+
+    public void operation() {
+        System.out.println("ConcretePrototypeA.operation()");
     }
 
 }

@@ -3,11 +3,8 @@ package com.designpattern.gof.creational.abstractfactory;
 /**
  *
  */
-public class ConcreteProductB1 extends ProductB {
+public class ConcreteProductB1 implements ProductB {
 
-    /**
-     * Default constructor
-     */
     public ConcreteProductB1() {
     }
 
@@ -15,7 +12,7 @@ public class ConcreteProductB1 extends ProductB {
      *
      */
     public void operation() {
-        // TODO implement here
+        System.out.println("ConcreteProductB1.operation()");
     }
 
 }

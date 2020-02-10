@@ -3,38 +3,22 @@ package com.designpattern.gof.creational.builder;
 /**
  *
  */
-public abstract class Builder {
-
-    /**
-     * Default constructor
-     */
-    public Builder() {
-    }
+public interface Builder {
 
     /**
      * @param arg
      * @return
      */
-    public Builder buildPart1(Object arg) {
-        // TODO implement here
-        return null;
-    }
+    Builder buildPart1(Object arg);
 
     /**
      * @param arg
      * @return
      */
-    public Builder buildPart2(Object arg) {
-        // TODO implement here
-        return null;
-    }
+    Builder buildPart2(Object arg);
 
     /**
      * @return
      */
-    public Product build() {
-        // TODO implement here
-        return null;
-    }
-
+    Product build();
 }

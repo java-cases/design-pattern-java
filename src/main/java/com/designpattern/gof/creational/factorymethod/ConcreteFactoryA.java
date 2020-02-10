@@ -7,6 +7,7 @@ public class ConcreteFactoryA extends Factory {
 
     @Override
     protected Product factoryMethod() {
+        System.out.println("ConcreteFactoryA.factoryMethod()");
         return new ConcreteProductA();
     }
 

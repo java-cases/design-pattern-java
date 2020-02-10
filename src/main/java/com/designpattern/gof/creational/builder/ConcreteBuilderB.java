@@ -3,12 +3,12 @@ package com.designpattern.gof.creational.builder;
 /**
  *
  */
-public class ConcreteBuilderB extends Builder {
+public class ConcreteBuilderB implements Builder {
 
-    /**
-     * Default constructor
-     */
+    private Product product;
+
     public ConcreteBuilderB() {
+        this.product = new Product();
     }
 
     /**
@@ -16,8 +16,9 @@ public class ConcreteBuilderB extends Builder {
      * @return
      */
     public Builder buildPart1(Object arg) {
-        // TODO implement here
-        return null;
+        this.product.setPart1(arg);
+        System.out.println("ConcreteBuilderB.buildPart1()");
+        return this;
     }
 
     /**
@@ -25,16 +26,16 @@ public class ConcreteBuilderB extends Builder {
      * @return
      */
     public Builder buildPart2(Object arg) {
-        // TODO implement here
-        return null;
+        this.product.setPart2(arg);
+        System.out.println("ConcreteBuilderB.buildPart2()");
+        return this;
     }
 
     /**
      * @return
      */
     public Product build() {
-        // TODO implement here
-        return null;
+        System.out.println("ConcreteBuilderB.build()");
+        return this.product;
     }
-
 }

@@ -6,6 +6,7 @@ public class ConcreteFactoryB extends Factory {
     }
 
     protected Product factoryMethod() {
+        System.out.println("ConcreteFactoryB.factoryMethod()");
         return new ConcreteProductB();
     }
 

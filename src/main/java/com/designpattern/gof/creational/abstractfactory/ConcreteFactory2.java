@@ -5,9 +5,6 @@ package com.designpattern.gof.creational.abstractfactory;
  */
 public class ConcreteFactory2 extends AbstractFactory {
 
-    /**
-     * Default constructor
-     */
     public ConcreteFactory2() {
     }
 
@@ -15,16 +12,16 @@ public class ConcreteFactory2 extends AbstractFactory {
      * @return
      */
     public ProductA createProductA() {
-        // TODO implement here
-        return null;
+        System.out.println("ConcreteFactory2.createProductA()");
+        return new ConcreteProductA2();
     }
 
     /**
      * @return
      */
     public ProductB createProductB() {
-        // TODO implement here
-        return null;
+        System.out.println("ConcreteFactory2.createProductB()");
+        return new ConcreteProductB2();
     }
 
 }

@@ -10,5 +10,4 @@ public abstract class Factory {
     }
 
     protected abstract Product factoryMethod();
-
 }

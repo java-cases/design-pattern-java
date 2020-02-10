@@ -5,14 +5,6 @@ package com.designpattern.gof.creational.builder;
  */
 public class Director {
 
-    /**
-     *
-     */
-    private Builder builder;
-
-    /**
-     * Default constructor
-     */
     public Director() {
     }
 
@@ -21,8 +13,9 @@ public class Director {
      * @return
      */
     public Product construct(Builder builder) {
-        // TODO implement here
-        return null;
+        return builder.buildPart1("keyboard")
+                .buildPart2("mouse")
+                .build();
     }
 
 }
