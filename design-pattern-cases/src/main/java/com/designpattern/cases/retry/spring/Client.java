@@ -11,7 +11,7 @@ public class Client {
 
     public void retry() {
         try {
-            retryService.retrySql("select * from user");
+            retryService.doRetrySQLException("select * from user");
         } catch (SQLException e) {
             e.printStackTrace();
         }

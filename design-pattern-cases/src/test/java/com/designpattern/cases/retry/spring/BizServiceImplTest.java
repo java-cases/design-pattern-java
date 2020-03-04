@@ -12,15 +12,36 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(webEnvironment = DEFINED_PORT)
-public class BizSqlServiceTest {
+public class BizServiceImplTest {
 
     @Autowired
     private BizService retryService;
 
+
     @Test
-    public void retrySql() {
+    public void doRetryAnyException() {
+        retryService.doRetryAnyException("doRetryAnyException");
+    }
+
+    @Test
+    public void doRetryIncludeException() {
+        retryService.doRetryIncludeException("doRetryIncludeException");
+    }
+
+    @Test
+    public void doRetryExcludeException() {
+        retryService.doRetryExcludeException("doRetryExcludeException");
+    }
+
+    @Test
+    public void doRetryExpressionException() {
+        retryService.doRetryExpressionException("doRetryExpressionException");
+    }
+
+    @Test
+    public void doRetrySQLException() {
         try {
-            retryService.retrySql("select * from user");
+            retryService.doRetrySQLException("select * from user");
         } catch (SQLException e) {
             e.printStackTrace();
         }
